@@ -19,11 +19,13 @@ public class GUI extends JPanel{
 
         JTabbedPane tabbedPane = new JTabbedPane();
 
-        JComponent panel1 = new EnterNumberTab();
+        Game game = new Game();
+
+        JComponent panel1 = new EnterNumberTab(game);
         tabbedPane.add("Enter Number", panel1);
         tabbedPane.setMnemonicAt(0,KeyEvent.VK_1);
 
-        JComponent panel2 = new GuessNumberTab();
+        JComponent panel2 = new GuessNumberTab(game);
         tabbedPane.add("Play Game", panel2);
         tabbedPane.setMnemonicAt(1,KeyEvent.VK_2);
 
@@ -35,15 +37,6 @@ public class GUI extends JPanel{
 
 
     }
-
-//    protected JComponent makeTextPanel(String text){
-//        JPanel panel = new JPanel(false);
-//        JLabel filler = new JLabel(text);
-//        filler.setHorizontalAlignment(JLabel.CENTER);
-//        panel.setLayout(new GridLayout(1,1));
-//        panel.add(filler);
-//        return panel;
-//    }
 
     private static void createAndShowGUI(){
         JFrame frame = new JFrame("Number Guessing Game");

@@ -17,9 +17,11 @@ public class EnterNumberTab extends JPanel implements ActionListener {
     protected JButton enter;
     protected JLabel enterNumber;
     protected JTextField number;
-    private Game game = new Game();
+    private Game game;
 
-    public EnterNumberTab(){
+    public EnterNumberTab(Game game){
+
+        this.game = game;
 
         enterNumber= new JLabel("Enter the Number you would like the other player to Guess");
         enterNumber.setHorizontalTextPosition(SwingConstants.CENTER);
@@ -48,9 +50,13 @@ public class EnterNumberTab extends JPanel implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if("Enter".equals(e.getActionCommand())){
+            try{
            String enteredNumber = number.getText();
-           game.setNumber(Integer.parseInt(enteredNumber));
-           System.out.println("Number: "+game.getNumber());
+           game.reset(Integer.parseInt(enteredNumber));
+            }
+            catch(Exception p){
+                System.out.println("Something has gone wrong, please enter a number.");
+            }
         }
     }
 }

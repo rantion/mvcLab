@@ -4,7 +4,7 @@
     <list default="true" id="9859d562-462b-4d36-bd6b-b339820a2eb9" name="Default" comment="" />
     <ignored path="antion_mvc.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Game.java" changelist="9859d562-462b-4d36-bd6b-b339820a2eb9" time="1384872941373" ignored="false" />
+    <file path="/Game.java" changelist="9859d562-462b-4d36-bd6b-b339820a2eb9" time="1384875480557" ignored="false" />
     <file path="/Controller.java" changelist="9859d562-462b-4d36-bd6b-b339820a2eb9" time="1384397982385" ignored="false" />
     <file path="$USER_HOME$/Chess/ChessPieceReader/src/com/company/DirectiveMatcher.java" changelist="9859d562-462b-4d36-bd6b-b339820a2eb9" time="1384552373808" ignored="false" />
     <file path="/DirectiveMatcher.java" changelist="9859d562-462b-4d36-bd6b-b339820a2eb9" time="1384552363341" ignored="false" />
@@ -12,10 +12,10 @@
     <file path="/Board.java" changelist="9859d562-462b-4d36-bd6b-b339820a2eb9" time="1384551123752" ignored="false" />
     <file path="$USER_HOME$/Chess/ChessPieceReader/src/com/company/Main.java" changelist="9859d562-462b-4d36-bd6b-b339820a2eb9" time="1384551211188" ignored="false" />
     <file path="/Main.java" changelist="9859d562-462b-4d36-bd6b-b339820a2eb9" time="1384550153492" ignored="false" />
-    <file path="/GUI.java" changelist="9859d562-462b-4d36-bd6b-b339820a2eb9" time="1384788957753" ignored="false" />
+    <file path="/GUI.java" changelist="9859d562-462b-4d36-bd6b-b339820a2eb9" time="1384875181223" ignored="false" />
     <file path="/fragment.java" changelist="9859d562-462b-4d36-bd6b-b339820a2eb9" time="1384837216112" ignored="false" />
-    <file path="/EnterNumberTab.java" changelist="9859d562-462b-4d36-bd6b-b339820a2eb9" time="1384837947288" ignored="false" />
-    <file path="/GuessNumberTab.java" changelist="9859d562-462b-4d36-bd6b-b339820a2eb9" time="1384838489045" ignored="false" />
+    <file path="/EnterNumberTab.java" changelist="9859d562-462b-4d36-bd6b-b339820a2eb9" time="1384875743546" ignored="false" />
+    <file path="/GuessNumberTab.java" changelist="9859d562-462b-4d36-bd6b-b339820a2eb9" time="1384877707339" ignored="false" />
     <file path="$USER_HOME$/Chess/ChessPieceReader/src/com/company/Piece.java" changelist="9859d562-462b-4d36-bd6b-b339820a2eb9" time="1384843906183" ignored="false" />
     <file path="/Piece.java" changelist="9859d562-462b-4d36-bd6b-b339820a2eb9" time="1384843853543" ignored="false" />
     <file path="/Dummy.txt" changelist="9859d562-462b-4d36-bd6b-b339820a2eb9" time="1384843919104" ignored="false" />
@@ -82,7 +82,7 @@
       <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="27" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0">
+            <state line="69" column="19" selection-start="1293" selection-end="1293" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -91,10 +91,8 @@
       <file leaf-file-name="GUI.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="107" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1384788959000" expanded="true" signature="866:1170" placeholder="..." />
-              </folding>
+            <state line="24" column="47" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -102,7 +100,7 @@
       <file leaf-file-name="EnterNumberTab.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/EnterNumberTab.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="17" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.0">
+            <state line="54" column="55" selection-start="1520" selection-end="1520" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -111,7 +109,7 @@
       <file leaf-file-name="GuessNumberTab.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/GuessNumberTab.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="0" selection-start="2483" selection-end="2483" vertical-scroll-proportion="1.1448864">
+            <state line="65" column="12" selection-start="2089" selection-end="2089" vertical-scroll-proportion="1.5665722">
               <folding />
             </state>
           </provider>
@@ -139,9 +137,9 @@
         <option value="$PROJECT_DIR$/src/com/company/Controller.java" />
         <option value="$PROJECT_DIR$/src/com/company/EnterNumberTabe.java" />
         <option value="$PROJECT_DIR$/src/com/company/GUI.java" />
-        <option value="$PROJECT_DIR$/src/com/company/GuessNumberTab.java" />
         <option value="$PROJECT_DIR$/src/com/company/EnterNumberTab.java" />
         <option value="$PROJECT_DIR$/src/com/company/Game.java" />
+        <option value="$PROJECT_DIR$/src/com/company/GuessNumberTab.java" />
       </list>
     </option>
   </component>
@@ -178,7 +176,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -217,6 +214,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -226,6 +224,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -321,8 +320,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19885434" sideWeight="0.62193125" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37806875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19885434" sideWeight="0.62356794" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3764321" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -413,9 +412,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="61" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1384788959000" expanded="true" signature="866:1170" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -454,15 +451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="107" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1384788959000" expanded="true" signature="866:1170" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="503" column="0" selection-start="18293" selection-end="18293" vertical-scroll-proportion="0.0">
@@ -472,14 +460,19 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/src.zip!/java/lang/NumberFormatException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="0" selection-start="1283" selection-end="1283" vertical-scroll-proportion="1.7471591">
-          <folding />
-        </state>
+        <state line="64" column="0" selection-start="1283" selection-end="1283" vertical-scroll-proportion="1.7471591" />
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/src.zip!/java/awt/event/ActionListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="16" selection-start="975" selection-end="975" vertical-scroll-proportion="0.61647725">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/EnterNumberTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="55" selection-start="1520" selection-end="1520" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -491,23 +484,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/EnterNumberTab.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="17" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.0">
+        <state line="24" column="47" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="27" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0">
+        <state line="69" column="19" selection-start="1293" selection-end="1293" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/GuessNumberTab.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="0" selection-start="2483" selection-end="2483" vertical-scroll-proportion="1.1448864">
+        <state line="65" column="12" selection-start="2089" selection-end="2089" vertical-scroll-proportion="1.5665722">
           <folding />
         </state>
       </provider>

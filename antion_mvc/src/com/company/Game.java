@@ -11,7 +11,7 @@ import java.beans.PropertyChangeSupport;
  * To change this template use File | Settings | File Templates.
  */
 public class Game {
-    private int number, guesses, guess;
+    private int number, guesses, guess, guessResult;
 
 
 
@@ -24,40 +24,40 @@ public class Game {
 
     }
 
+    public void setGuesses(int guesses) {
+        this.guesses = guesses;
+    }
+
+    public int getGuessResult() {
+        return guessResult;
+    }
+
+    public void setGuessResult(int guessResult) {
+        this.guessResult = guessResult;
+    }
+
     public int getNumber() {
         return number;
     }
 
     public void setNumber(int number) {
-        System.out.println("In set Number Method");
-//        int oldValue = this.number;
         this.number = number;
-//        support.firePropertyChange("number", oldValue, number);
-        System.out.println("Number in Game Class: "+ this.number);
     }
 
     public int getGuesses() {
         return guesses;
     }
 
-    public void setGuesses(int guesses) {
-        int oldValue = this.guesses;
-        this.guesses = guesses;
-    }
-
     public int getGuess() {
-        System.out.println("Guess: "+guess);
         return guess;
     }
 
     public void setGuess(int guess) {
-        int oldValue = this.guess;
         this.guess = guess;
     }
 
     public int checkGuess(int guess){
-        int guessResult=0;
-        System.out.println("in checkGuess method, guess: "+guess+" number: "+number);
+        guessResult=0;
         if(guess>getNumber()){
             guessResult = 1;
         }
@@ -67,14 +67,14 @@ public class Game {
         else if(guess == number){
             guessResult = 0;
         }
-        guesses++;
-        System.out.println("Guesses: "+guesses);
+       guesses++;
         System.out.println(guessResult);
+        System.out.println("Guesses: "+guesses);
         return guessResult;
     }
 
     public void reset(int newNumber){
-        number = newNumber;
+        setNumber(newNumber);
         guesses = 0;
 
     }

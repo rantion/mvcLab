@@ -5,6 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
+import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
@@ -15,29 +16,19 @@ import java.beans.PropertyChangeSupport;
  * Time: 5:20 PM
  * To change this template use File | Settings | File Templates.
  */
-public class GuessNumberTab extends JPanel implements ActionListener {
+public class GuessNumberTab extends JPanel implements ActionListener , PropertyChangeListener {
     protected JButton guess;
-    protected JLabel guesses, enterGuess, higherOrLower;
-    protected JTextField playerGuess;
-    private Game game = new Game();
+    protected JLabel enterGuess;
+    protected JFormattedTextField guesses, higherOrLower, playerGuess;
+    private Game game;
+    private int numGuesses, numResult, newGuess;
 
-    private PropertyChangeSupport support = new PropertyChangeSupport(this);
+    public GuessNumberTab(Game game){
 
-    public void addPropertyChangeListener (PropertyChangeListener handler){
-        support.addPropertyChangeListener(handler);
-    }
+        this.game = game;
 
-    public void removePropertyChangeListener(PropertyChangeListener handler){
-        support.removePropertyChangeListener(handler);
-    }
+        guesses = new JFormattedTextField("Number of Guesses: "+game.getGuesses());
 
-    public GuessNumberTab(){
-
-
-
-        guesses = new JLabel("Number of Guesses: "+game.getGuesses());
-        guesses.setVerticalTextPosition(SwingConstants.CENTER);
-        guesses.setHorizontalTextPosition(SwingConstants.CENTER);
         this.add(guesses);
 
 
@@ -46,8 +37,9 @@ public class GuessNumberTab extends JPanel implements ActionListener {
         enterGuess.setVerticalTextPosition(SwingConstants.CENTER);
         this.add(enterGuess);
 
-        playerGuess = new JTextField();
+        playerGuess = new JFormattedTextField();
         this.add(playerGuess);
+        playerGuess.addPropertyChangeListener("value", this);
 
         guess = new JButton("Enter Number");
         guess.setVerticalTextPosition(AbstractButton.CENTER);
@@ -58,8 +50,8 @@ public class GuessNumberTab extends JPanel implements ActionListener {
         this.add(guess);
 
 
-//        higherOrLower = new JLabel("Higher or Lower: "+);
-
+        higherOrLower = new JFormattedTextField("Higher or Lower: "+game.getGuessResult());
+        this.add(higherOrLower);
         this.setLayout(new GridLayout(1, 1));
     }
 
@@ -67,15 +59,26 @@ public class GuessNumberTab extends JPanel implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if("Guess".equals(e.getActionCommand())){
+            try{
             String playersGuess = playerGuess.getText();
-            int newGuess = Integer.parseInt(playersGuess);
+            newGuess = Integer.parseInt(playersGuess);
             game.setGuess(newGuess);
-            System.out.println("New Guess in Tab: " + newGuess);
-            System.out.println("New Guess calling game method: "+game.getGuess());
-            System.out.println("Number in guessNumber tAB: "+game.getNumber());
             game.checkGuess(newGuess);
+            }
+            catch(Exception r){
+                System.out.println("Something has gone wrong, please try again.");
+            }
 
         }
+    }
+
+    @Override
+    public void propertyChange(PropertyChangeEvent evt) {
+
+       guesses.setText("Guesses: "+game.getGuesses());
+       higherOrLower.setText("Higher or Lower: "+game.getGuessResult());
+
+
     }
 }
 
